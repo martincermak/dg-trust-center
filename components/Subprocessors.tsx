@@ -96,7 +96,7 @@ export default function Subprocessors() {
               </p>
             </div>
             {submitted ? (
-              <p className="text-sm font-medium text-dg-green">
+              <p className="text-sm font-medium text-green-700">
                 ✓ You&apos;re subscribed. We&apos;ll notify you of changes.
               </p>
             ) : (

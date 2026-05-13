@@ -24,19 +24,14 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-200 ${
-        scrolled
-          ? "bg-dg-dark/95 backdrop-blur-md shadow-lg"
-          : "bg-dg-dark"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-200 ${
+        scrolled ? "bg-dg-dark/95 backdrop-blur-md shadow-lg" : "bg-dg-dark"
       }`}
     >
       <div className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="https://deltagreen.energy" className="flex items-center gap-2.5">
-          <DGLogo />
-          <span className="text-white font-semibold text-sm hidden sm:inline">
-            Delta Green
-          </span>
+        {/* Logo — matches deltagreen.energy wordmark: "delta" white / "green" lime, stacked */}
+        <Link href="https://deltagreen.energy" className="flex items-center gap-2.5 group">
+          <DGWordmark />
         </Link>
 
         {/* Desktop nav */}
@@ -45,7 +40,7 @@ export default function Nav() {
             <a
               key={item.href}
               href={item.href}
-              className="text-gray-300 hover:text-white text-sm px-3 py-1.5 rounded-md hover:bg-white/10 transition-colors"
+              className="text-gray-400 hover:text-white text-sm font-medium px-3 py-1.5 rounded-lg hover:bg-white/8 transition-colors"
             >
               {item.label}
             </a>
@@ -54,14 +49,11 @@ export default function Nav() {
 
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
-          <a
-            href="#documents"
-            className="hidden sm:inline-flex btn-primary text-xs px-4 py-2"
-          >
+          <a href="#documents" className="hidden sm:inline-flex btn-primary text-xs px-4 py-2">
             Request documents
           </a>
           <button
-            className="md:hidden text-gray-300 hover:text-white p-1"
+            className="md:hidden text-gray-300 hover:text-white p-1.5 rounded-lg hover:bg-white/10"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -72,18 +64,18 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-dg-dark border-t border-white/10 px-6 pb-4">
+        <div className="md:hidden bg-dg-dark border-t border-white/10 px-6 pb-6 pt-2">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block text-gray-300 hover:text-white text-sm py-2.5 border-b border-white/5 last:border-0"
+              className="block text-gray-300 hover:text-white text-sm py-3 border-b border-white/5 last:border-0 font-medium"
             >
               {item.label}
             </a>
           ))}
-          <a href="#documents" className="btn-primary mt-4 text-xs">
+          <a href="#documents" className="btn-primary mt-5 text-xs justify-center w-full">
             Request documents
           </a>
         </div>
@@ -92,15 +84,36 @@ export default function Nav() {
   );
 }
 
-function DGLogo() {
+/**
+ * Replicates the deltagreen.energy wordmark:
+ * "delta" in white (semi-bold), "green" in lime below it.
+ * Uses SVG text so it scales cleanly without a font load dependency.
+ */
+function DGWordmark() {
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden>
-      <rect width="28" height="28" rx="6" fill="#16A34A" />
-      <path
-        d="M7 14C7 10.134 10.134 7 14 7h4v2.5h-4A4.5 4.5 0 0 0 9.5 14a4.5 4.5 0 0 0 4.5 4.5h4V21h-4C10.134 21 7 17.866 7 14Z"
+    <svg width="72" height="36" viewBox="0 0 72 36" fill="none" aria-label="Delta Green">
+      {/* "delta" — white, uppercase, tight tracking */}
+      <text
+        x="0" y="15"
+        fontFamily="Manrope, system-ui, sans-serif"
+        fontWeight="700"
+        fontSize="14"
         fill="white"
-      />
-      <path d="M16 11.5h5V14h-5v-2.5Z" fill="white" />
+        letterSpacing="-0.3"
+      >
+        delta
+      </text>
+      {/* "green" — electric lime */}
+      <text
+        x="0" y="31"
+        fontFamily="Manrope, system-ui, sans-serif"
+        fontWeight="700"
+        fontSize="14"
+        fill="#72EC41"
+        letterSpacing="-0.3"
+      >
+        green
+      </text>
     </svg>
   );
 }

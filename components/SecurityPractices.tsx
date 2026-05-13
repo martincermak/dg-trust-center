@@ -74,7 +74,7 @@ export default function SecurityPractices() {
 
 function LockIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="8" width="12" height="9" rx="2" />
       <path d="M6 8V5a3 3 0 1 1 6 0v3" />
     </svg>
@@ -83,7 +83,7 @@ function LockIcon() {
 
 function ShieldIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M9 2 3 5v5c0 3.5 2.5 6.5 6 7.5C12.5 16.5 15 13.5 15 10V5L9 2Z" />
       <path d="M6.5 9l2 2 3.5-3.5" />
     </svg>
@@ -92,7 +92,7 @@ function ShieldIcon() {
 
 function RadarIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="9" cy="9" r="7" />
       <circle cx="9" cy="9" r="3" />
       <path d="M9 9 15 4" />
@@ -102,7 +102,7 @@ function RadarIcon() {
 
 function AlertIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M9 1 1 16h16L9 1Z" />
       <path d="M9 7v4M9 13v.5" strokeWidth="1.8" />
     </svg>
@@ -111,7 +111,7 @@ function AlertIcon() {
 
 function RefreshIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M3 9a6 6 0 0 1 10.5-4M15 9a6 6 0 0 1-10.5 4" />
       <path d="M13 5h2.5V2.5M5 13H2.5V15.5" />
     </svg>
@@ -120,7 +120,7 @@ function RefreshIcon() {
 
 function CodeIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M5 5 1 9l4 4M13 5l4 4-4 4M11 3 7 15" />
     </svg>
   );
@@ -128,7 +128,7 @@ function CodeIcon() {
 
 function PeopleIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <circle cx="7" cy="6" r="3" />
       <path d="M1 16c0-3.3 2.7-6 6-6s6 2.7 6 6" />
       <path d="M13 3a3 3 0 0 1 0 6M17 16a6 6 0 0 0-4-5.6" />
@@ -138,7 +138,7 @@ function PeopleIcon() {
 
 function ChainIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M7 10a3 3 0 0 0 4.24.46l2.12-2.12a3 3 0 0 0-4.24-4.24L7.94 5.24" />
       <path d="M11 8a3 3 0 0 0-4.24-.46L4.64 9.66a3 3 0 0 0 4.24 4.24l1.18-1.18" />
     </svg>

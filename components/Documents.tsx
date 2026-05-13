@@ -71,7 +71,7 @@ export default function Documents({ onRequestOpen }: DocumentsProps) {
               ))}
             </ul>
 
-            <button onClick={onRequestOpen} className="btn-primary mt-6 w-full justify-center">
+            <button onClick={onRequestOpen} className="btn-primary mt-6 w-full justify-center text-dg-dark">
               Request NDA documents
             </button>
             <p className="text-xs text-gray-400 text-center mt-2">

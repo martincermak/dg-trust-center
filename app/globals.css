@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,11 +22,14 @@
 
 @layer components {
   .section-label {
-    @apply text-xs font-semibold tracking-widest uppercase text-dg-green;
+    /* Lime green on light backgrounds */
+    @apply text-xs font-bold tracking-widest uppercase text-dg-lime;
+    /* Make lime readable on white by slightly darkening */
+    color: #3baa1a;
   }
 
   .section-heading {
-    @apply text-2xl font-semibold text-dg-dark mt-2;
+    @apply text-2xl font-extrabold text-dg-dark mt-2 tracking-tight;
   }
 
   .section-body {
@@ -34,27 +37,35 @@
   }
 
   .card {
-    @apply bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow;
+    @apply bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow;
   }
 
   .badge {
-    @apply inline-flex items-center gap-1.5 bg-dg-muted text-dg-mid text-xs font-semibold px-3 py-1 rounded-full border border-dg-border;
+    @apply inline-flex items-center gap-1.5 bg-dg-muted text-xs font-bold px-3 py-1 rounded-full border border-dg-border;
+    color: #2d7a18;
   }
 
+  /* Primary: lime fill + dark text (matches site's "Find out your revenue" button) */
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-dg-green hover:bg-dg-mid text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors;
+    @apply inline-flex items-center gap-2 bg-dg-lime hover:bg-dg-limehov text-dg-dark text-sm font-bold px-5 py-2.5 rounded-full transition-colors;
   }
 
+  /* Outline: lime border + lime text on dark bg */
+  .btn-outline-dark {
+    @apply inline-flex items-center gap-2 border border-dg-lime text-dg-lime bg-transparent text-sm font-bold px-5 py-2.5 rounded-full hover:bg-dg-lime/10 transition-colors;
+  }
+
+  /* Outline: gray border on light bg */
   .btn-outline {
-    @apply inline-flex items-center gap-2 border border-dg-border text-dg-mid text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-dg-surface transition-colors;
+    @apply inline-flex items-center gap-2 border border-gray-200 text-dg-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:border-gray-300 hover:bg-gray-50 transition-colors;
   }
 
   .input {
-    @apply w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-dg-text placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-dg-green/40 focus:border-dg-green transition;
+    @apply w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-dg-text placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-dg-lime/30 focus:border-dg-lime transition;
   }
 
   .table-th {
-    @apply text-left text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-3 bg-gray-50 first:rounded-l-lg last:rounded-r-lg;
+    @apply text-left text-xs font-bold text-gray-500 uppercase tracking-wider px-4 py-3 bg-gray-50 first:rounded-l-xl last:rounded-r-xl;
   }
 
   .table-td {

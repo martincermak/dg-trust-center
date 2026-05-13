@@ -87,13 +87,13 @@ export default function Disclosure() {
               />
             </div>
 
-            <div className="mt-6 card border-l-4 border-l-dg-green">
+            <div className="mt-6 card border-l-4 border-l-dg-lime">
               <p className="text-xs font-semibold text-dg-dark uppercase tracking-wide mb-1">
                 Security contact
               </p>
               <a
                 href="mailto:security@deltagreen.energy"
-                className="text-sm font-medium text-dg-green hover:underline"
+                className="text-sm font-medium text-green-700 hover:underline"
               >
                 security@deltagreen.energy
               </a>
@@ -118,7 +118,7 @@ function PolicyItem({
 }) {
   return (
     <div className="card">
-      <p className="text-xs font-semibold text-dg-green uppercase tracking-wide mb-1">
+      <p className="text-xs font-semibold text-green-700 uppercase tracking-wide mb-1">
         {title}
       </p>
       <p className="text-sm text-gray-600 leading-relaxed">{children}</p>

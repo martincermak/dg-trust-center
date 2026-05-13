@@ -11,7 +11,7 @@ export default function Certifications() {
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* ISO 27001 */}
-          <div className="card border-l-4 border-l-dg-green">
+          <div className="card border-l-4 border-l-dg-lime">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <span className="badge">Certified</span>
@@ -102,7 +102,7 @@ function Row({ label, value }: { label: string; value: string }) {
 function CertIcon() {
   return (
     <div className="shrink-0 w-10 h-10 bg-dg-muted rounded-lg flex items-center justify-center">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#72EC41" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="10" cy="8" r="4" />
         <path d="M6 14.5 4 19l6-2 6 2-2-4.5" />
       </svg>
