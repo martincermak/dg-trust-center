@@ -14,7 +14,7 @@ export default function Documents({ onRequestOpen }: DocumentsProps) {
           <div>
             <div className="flex items-center gap-2 mb-5">
               <span className="text-sm font-semibold text-dg-dark">Publicly available</span>
-              <span className="badge">No NDA required</span>
+              {/* <span className="badge">No NDA required</span> */}
             </div>
             <ul className="space-y-3">
               {publicDocuments.map((doc) => (
@@ -36,8 +36,10 @@ export default function Documents({ onRequestOpen }: DocumentsProps) {
           </div>
           <div>
             <div className="flex items-center gap-2 mb-5">
-              <span className="text-sm font-semibold text-dg-dark">Under NDA</span>
-              <span className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full border border-amber-200">Request required</span>
+              <span className="text-sm font-semibold text-dg-dark">Available upon request</span>
+              {/* <span className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full border border-amber-200">
+                Available upon request
+              </span> */}
             </div>
             <ul className="space-y-3">
               {gatedDocuments.map((doc) => (
@@ -52,8 +54,13 @@ export default function Documents({ onRequestOpen }: DocumentsProps) {
                 </li>
               ))}
             </ul>
-            <button onClick={onRequestOpen} className="btn-primary mt-6 w-full justify-center">Request NDA documents</button>
-            <p className="text-xs text-gray-400 text-center mt-2">We typically respond within 1–2 business days.</p>
+
+            <button onClick={onRequestOpen} className="btn-primary mt-6 w-full justify-center text-dg-dark">
+              Request documents
+            </button>
+            <p className="text-xs text-gray-400 text-center mt-2">
+              We typically respond within 1–2 business days.
+            </p>
           </div>
         </div>
       </div>

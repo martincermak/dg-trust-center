@@ -23,7 +23,7 @@ Edit `tailwind.config.ts` → `theme.extend.colors.dg` to match exact hex values
 from deltagreen.energy brand guidelines.
 
 ### Real content to fill in
-- `components/Certifications.tsx` — replace placeholders:
+- `components/compliance.tsx` — replace placeholders:
   - `[Certifying Body Name]`
   - `[Certificate Number]`
   - `[Expiry Date]`
@@ -66,7 +66,7 @@ app/
 components/
   Nav.tsx             Sticky nav with anchor links + mobile menu
   Hero.tsx            Dark hero: badges, headline, CTAs
-  Certifications.tsx  ISO 27001 card, GDPR card, NIS2 statement
+  Compliance.tsx  ISO 27001 card, GDPR card, NIS2 statement
   SecurityPractices.tsx  8-card grid of security control areas
   Documents.tsx       Public docs + gated docs with request trigger
   Privacy.tsx         GDPR links, DPA download, data transfer table

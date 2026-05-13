@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Certifications from "@/components/Certifications";
+import Compliance from "@/components/Compliance";
 import SecurityPractices from "@/components/SecurityPractices";
 import Documents from "@/components/Documents";
 import Privacy from "@/components/Privacy";
@@ -20,7 +20,7 @@ export default function TrustPage() {
       <Nav />
       <main>
         <Hero />
-        <Certifications />
+        <Compliance />
         <SecurityPractices />
         <Documents onRequestOpen={() => setFormOpen(true)} />
         <Privacy />

@@ -40,10 +40,21 @@ export default function Disclosure() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 card border-l-4 border-l-dg-lime">
-              <p className="text-xs font-semibold text-dg-dark uppercase tracking-wide mb-1">Security contact</p>
-              <a href="mailto:security@deltagreen.energy" className="text-sm font-medium text-green-700 hover:underline">security@deltagreen.energy</a>
-              <p className="text-xs text-gray-500 mt-1">For urgent incidents, reference “SECURITY INCIDENT” in the subject line to trigger our on-call escalation.</p>
+
+            <div className="mt-6 card border-l-4 border-l-dg-lime"> 
+              <p className="text-xs font-semibold text-dg-dark uppercase tracking-wide mb-1">
+                Security contact
+              </p>
+              <a
+                href="mailto:security@deltagreen.energy"
+                className="text-sm font-medium text-green-700 hover:underline"
+              >
+                security@deltagreen.energy
+              </a>
+              <p className="text-xs text-gray-500 mt-1">
+                For urgent incidents, reference "SECURITY INCIDENT" in the
+                subject line to trigger our on-call escalation.
+              </p>
             </div>
           </div>
         </div>

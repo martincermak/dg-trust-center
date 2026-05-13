@@ -1,10 +1,14 @@
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-20 px-6 bg-white">
+    <section id="compliance" className="py-20 px-6 bg-white">
       <div className="max-w-content mx-auto">
-        <p className="section-label">Compliance</p>
-        <h2 className="section-heading">Certifications &amp; Standards</h2>
-        <p className="section-body mt-3 max-w-2xl">Independent third-party audits and certifications validate our security programme against internationally recognised frameworks.</p>
+        <p className="section-label">How we align</p>
+        <h2 className="section-heading">Compliance: Certifications &amp; Standards</h2>
+        <p className="section-body mt-3 max-w-2xl">
+          Independent third-party audits and certifications validate our security
+          programme against internationally recognised frameworks.
+        </p>
+
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card border-l-4 border-l-dg-lime">
             <div className="flex items-start justify-between gap-4">
@@ -23,12 +27,18 @@ export default function Certifications() {
               <div className="flex gap-2"><dt className="text-gray-400 shrink-0 w-28">Certificate no.</dt><dd className="text-gray-700 font-medium">[Certificate Number]</dd></div>
               <div className="flex gap-2"><dt className="text-gray-400 shrink-0 w-28">Valid until</dt><dd className="text-gray-700 font-medium">[Expiry Date]</dd></div>
             </dl>
-            <a href="/documents/iso-27001-certificate.pdf" className="btn-outline mt-5 text-xs">
-              <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" /></svg>
+            <br /><br />
+            <a
+              href="/documents/iso-27001-certificate.pdf"
+              className="btn-outline mt-5 text-xs"
+            >
+              <DownloadIcon />
               Download certificate (PDF)
             </a>
           </div>
-          <div className="card border-l-4 border-l-blue-400">
+
+          {/* GDPR */}
+          <div className="card border-l-4 border-l-dg-lime">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <span className="badge">Compliant</span>
@@ -39,21 +49,32 @@ export default function Certifications() {
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#3B82F6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="10" cy="10" r="8" /><path d="M10 2c0 0-3 3-3 8s3 8 3 8M10 2c0 0 3 3 3 8s-3 8-3 8M2 10h16" /></svg>
               </div>
             </div>
-            <p className="mt-4 text-sm text-gray-600 leading-relaxed">Delta Green processes personal data lawfully under GDPR. We maintain a DPO, a records-of-processing activities register, and offer a DPA template to all customers who require one.</p>
-            <a href="#privacy" className="btn-outline mt-5 text-xs">Privacy details</a>
+            <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+              Delta Green processes personal data lawfully under GDPR. We maintain
+              a DPO, a records-of-processing activities register, and offer a DPA
+              template to all customers who require one.
+            </p>
+            <br /><br /><br /><br />
+            <a href="#privacy" className="btn-outline mt-5 text-xs">
+              GDPR Compliance details
+            </a>
           </div>
           <div className="card border-l-4 border-l-gray-300">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <span className="inline-flex items-center gap-1.5 bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">Not in scope</span>
-                <h3 className="text-base font-semibold text-dg-dark mt-3">NIS2 / NÚKIB</h3>
-                <p className="text-sm text-gray-500 mt-1">EU Network &amp; Information Security Directive</p>
-              </div>
-              <div className="shrink-0 w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#9CA3AF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="10" cy="10" r="8" /><path d="M10 9v5M10 6.5v.5" strokeWidth="2" strokeLinecap="round" /></svg>
+                <span className="inline-flex items-center gap-1.5 bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">
+                  Not in scope
+                </span>
+                <h3 className="text-base font-semibold text-dg-dark mt-3">NZKB / NIS2</h3>
+                <p className="text-sm text-gray-500 mt-1">
+                  EU Network &amp; Information Security Directive
+                </p>
               </div>
             </div>
-            <p className="mt-4 text-sm text-gray-600 leading-relaxed">Delta Green does not currently fall within the scope of NIS2 or the Czech NÚKIB regulated entity classification. We monitor regulatory developments and will report any changes in scope.</p>
+            <p className="mt-4 text-sm text-gray-600 leading-relaxed">
+              Delta Green is currently classified as an SME under the Czech NÚKIB framework and is therefore outside the scope of NIS2 and regulated entity requirements. <br /><br />
+              We maintain a security posture that is largely aligned with applicable best practices and continuously monitor regulatory changes.
+            </p>
           </div>
         </div>
       </div>

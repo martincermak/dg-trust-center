@@ -28,8 +28,17 @@ export default function Privacy() {
             ))}
             <div className="card mt-6">
               <h3 className="text-sm font-semibold text-dg-dark mb-3">Data Protection Officer</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">For privacy-related requests, right-to-erasure or any GDPR question, contact our DPO directly.</p>
-              <a href="mailto:privacy@deltagreen.energy" className="mt-3 inline-flex items-center gap-1.5 text-sm text-green-700 font-medium hover:underline">privacy@deltagreen.energy</a>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                For privacy-related requests, right-to-erasure or any GDPR
+                question, contact our DPO directly.
+              </p>
+              <a
+                href="mailto:security@deltagreen.energy"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm text-green-700 font-medium hover:underline"
+              >
+                <MailIcon />
+                security@deltagreen.energy
+              </a>
             </div>
           </div>
           <div>

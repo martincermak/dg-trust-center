@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { label: "Certifications", href: "#certifications" },
+  { label: "Compliance", href: "#compliance" },
   { label: "Security", href: "#security" },
   { label: "Documents", href: "#documents" },
   { label: "Privacy", href: "#privacy" },
