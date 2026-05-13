@@ -1,0 +1,48 @@
+{
+  "lastUpdated": "2025-04-01",
+  "notificationEmail": "security@deltagreen.energy",
+  "items": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "purpose": "Cloud infrastructure & hosting",
+      "dataCategories": ["Platform data", "Customer data", "Telemetry"],
+      "location": "EU (Frankfurt, Ireland)",
+      "transferMechanism": "EEA hosting — no transfer"
+    },
+    {
+      "name": "Google Workspace",
+      "purpose": "Email, calendar, internal collaboration",
+      "dataCategories": ["Contact data", "Business communications"],
+      "location": "EU",
+      "transferMechanism": "EEA hosting — no transfer"
+    },
+    {
+      "name": "HubSpot",
+      "purpose": "CRM & marketing automation",
+      "dataCategories": ["Contact data", "Company data"],
+      "location": "USA",
+      "transferMechanism": "SCCs (EU Standard Contractual Clauses)"
+    },
+    {
+      "name": "Datadog",
+      "purpose": "Application monitoring & logging",
+      "dataCategories": ["Log data", "Performance metrics"],
+      "location": "EU (Frankfurt)",
+      "transferMechanism": "EEA hosting — no transfer"
+    },
+    {
+      "name": "Sentry",
+      "purpose": "Error tracking & performance monitoring",
+      "dataCategories": ["Error logs", "Stack traces"],
+      "location": "USA",
+      "transferMechanism": "SCCs (EU Standard Contractual Clauses)"
+    },
+    {
+      "name": "Stripe",
+      "purpose": "Payment processing",
+      "dataCategories": ["Billing data", "Contact data"],
+      "location": "USA / EU",
+      "transferMechanism": "SCCs (EU Standard Contractual Clauses)"
+    }
+  ]
+}
