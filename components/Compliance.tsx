@@ -1,9 +1,9 @@
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-20 px-6 bg-white">
+    <section id="compliance" className="py-20 px-6 bg-white">
       <div className="max-w-content mx-auto">
-        <p className="section-label">Compliance</p>
-        <h2 className="section-heading">Certifications &amp; Standards</h2>
+        <p className="section-label">How we align</p>
+        <h2 className="section-heading">Compliance: Certifications &amp; Standards</h2>
         <p className="section-body mt-3 max-w-2xl">
           Independent third-party audits and certifications validate our security
           programme against internationally recognised frameworks.
@@ -30,6 +30,7 @@ export default function Certifications() {
               <Row label="Certificate no." value="[Certificate Number]" />
               <Row label="Valid until" value="[Expiry Date]" />
             </dl>
+            <br /><br />
             <a
               href="/documents/iso-27001-certificate.pdf"
               className="btn-outline mt-5 text-xs"
@@ -40,7 +41,7 @@ export default function Certifications() {
           </div>
 
           {/* GDPR */}
-          <div className="card border-l-4 border-l-blue-400">
+          <div className="card border-l-4 border-l-dg-lime">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <span className="badge">Compliant</span>
@@ -56,8 +57,9 @@ export default function Certifications() {
               a DPO, a records-of-processing activities register, and offer a DPA
               template to all customers who require one.
             </p>
+            <br /><br /><br /><br />
             <a href="#privacy" className="btn-outline mt-5 text-xs">
-              Privacy details
+              GDPR Compliance details
             </a>
           </div>
 
@@ -68,7 +70,7 @@ export default function Certifications() {
                 <span className="inline-flex items-center gap-1.5 bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">
                   Not in scope
                 </span>
-                <h3 className="text-base font-semibold text-dg-dark mt-3">NIS2 / NÚKIB</h3>
+                <h3 className="text-base font-semibold text-dg-dark mt-3">NZKB / NIS2</h3>
                 <p className="text-sm text-gray-500 mt-1">
                   EU Network &amp; Information Security Directive
                 </p>
@@ -76,9 +78,8 @@ export default function Certifications() {
               <InfoIcon />
             </div>
             <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-              Delta Green does not currently fall within the scope of NIS2 or
-              the Czech NÚKIB regulated entity classification. We monitor
-              regulatory developments and will report any changes in scope.
+              Delta Green is currently classified as an SME under the Czech NÚKIB framework and is therefore outside the scope of NIS2 and regulated entity requirements. <br /><br />
+              We maintain a security posture that is largely aligned with applicable best practices and continuously monitor regulatory changes.
             </p>
           </div>
         </div>

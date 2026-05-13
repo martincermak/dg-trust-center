@@ -87,7 +87,7 @@ export default function Disclosure() {
               />
             </div>
 
-            <div className="mt-6 card border-l-4 border-l-dg-lime">
+            <div className="mt-6 card border-l-4 border-l-dg-lime"> 
               <p className="text-xs font-semibold text-dg-dark uppercase tracking-wide mb-1">
                 Security contact
               </p>

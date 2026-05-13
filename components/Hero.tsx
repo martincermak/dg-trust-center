@@ -1,15 +1,8 @@
 export default function Hero() {
   return (
-    <section className="bg-dg-dark pt-32 pb-24 px-6 text-white">
+    <section className="bg-dg-dark pt-32 pb-4 px-6 text-white">
       <div className="max-w-content mx-auto">
         <div className="max-w-2xl">
-          {/* Compliance status badges */}
-          <div className="flex flex-wrap gap-2 mb-8">
-            <ComplianceBadge label="ISO 27001:2022" status="certified" />
-            <ComplianceBadge label="GDPR Compliant" status="certified" />
-            <ComplianceBadge label="NIS2 — Not in scope" status="neutral" />
-            <ComplianceBadge label="CRA — Monitoring" status="neutral" />
-          </div>
 
           {/* Headline — matches site style: bold, tight, lime on key words */}
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">
@@ -28,16 +21,16 @@ export default function Hero() {
             This page documents our security programme, compliance posture, and
             how to reach us for due-diligence requests — no gatekeeping.
           </p>
-
-          <div className="mt-10 flex flex-wrap gap-3">
-            <a href="/documents/iso-27001-certificate.pdf" className="btn-primary">
-              <DownloadIcon />
-              ISO 27001 Certificate
-            </a>
-            <a href="#documents" className="btn-outline-dark">
-              Request NDA documents
-            </a>
+          <br /><br />
+          {/* Compliance status badges */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            <ComplianceBadge label="ISO 27001:2022" status="certified" />
+            <ComplianceBadge label="GDPR Compliant" status="certified" />
+            <ComplianceBadge label="NIS2 — Not in scope" status="neutral" />
+            <ComplianceBadge label="CRA — Monitoring" status="neutral" />
           </div>
+
+
         </div>
       </div>
     </section>

@@ -64,11 +64,11 @@ export default function Privacy() {
                 question, contact our DPO directly.
               </p>
               <a
-                href="mailto:privacy@deltagreen.energy"
+                href="mailto:security@deltagreen.energy"
                 className="mt-3 inline-flex items-center gap-1.5 text-sm text-green-700 font-medium hover:underline"
               >
                 <MailIcon />
-                privacy@deltagreen.energy
+                security@deltagreen.energy
               </a>
             </div>
           </div>
