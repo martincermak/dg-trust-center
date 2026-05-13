@@ -9,20 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Delta Green brand tokens — adjust once exact hex confirmed
+        // Delta Green brand tokens — extracted from deltagreen.energy screenshots
         dg: {
-          dark:    "#0A1F12",   // hero bg, nav bg
-          mid:     "#14532D",   // section accents, icon bg
-          green:   "#16A34A",   // primary accent
-          bright:  "#22C55E",   // CTA buttons, highlights
-          surface: "#F0FDF4",   // light section bg
-          muted:   "#DCFCE7",   // badge / chip bg
-          border:  "#BBF7D0",   // dividers on light bg
-          text:    "#052E16",   // body text on light
+          dark:    "#0B1D0E",   // hero/nav bg — very dark forest green
+          darker:  "#091508",   // deeper variant for hover/active states
+          lime:    "#72EC41",   // electric lime — headlines, CTA fill, logo "green"
+          limehov: "#5ED42E",   // lime hover (slightly darker)
+          surface: "#F4FAF5",   // light section bg — very slight green tint
+          muted:   "#E6F7E9",   // badge/chip bg on light
+          border:  "#C6E8CB",   // dividers on light bg
+          text:    "#0B1D0E",   // body text on light sections
+          subtle:  "#4A6B4E",   // secondary text on dark bg
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        // Manrope matches the geometric bold weight seen on deltagreen.energy headlines
+        sans: ["Manrope", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "Menlo", "monospace"],
       },
       maxWidth: {

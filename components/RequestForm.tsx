@@ -181,7 +181,7 @@ export default function RequestForm({ open, onClose }: RequestFormProps) {
                     key={doc.title}
                     className={`flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition-colors ${
                       form.documents.includes(doc.title)
-                        ? "border-dg-green bg-dg-surface"
+                        ? "border-dg-lime bg-dg-surface"
                         : "border-gray-200 hover:border-gray-300"
                     }`}
                   >
@@ -269,7 +269,7 @@ function SuccessState({ onClose }: { onClose: () => void }) {
   return (
     <div className="px-6 py-12 text-center">
       <div className="w-14 h-14 bg-dg-muted rounded-full flex items-center justify-center mx-auto">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#3baa1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M5 14l7 7L23 7" />
         </svg>
       </div>

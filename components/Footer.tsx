@@ -1,11 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="bg-dg-dark text-gray-400 py-12 px-6">
+    <footer className="bg-dg-dark text-gray-500 py-12 px-6">
       <div className="max-w-content mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
-            <p className="text-white font-semibold text-sm">Delta Green a.s.</p>
-            <p className="text-xs mt-1">
+            {/* Wordmark replica */}
+            <div className="mb-1">
+              <span className="text-white font-extrabold text-sm tracking-tight">delta</span>
+              <br />
+              <span className="font-extrabold text-sm tracking-tight" style={{ color: "#72EC41" }}>green</span>
+            </div>
+            <p className="text-xs mt-2">
               Energy flexibility platform — Copilot · Proteus · DeltaLink
             </p>
           </div>
@@ -26,7 +31,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs">
           <p>© {new Date().getFullYear()} Delta Green a.s. All rights reserved.</p>
-          <p>
+          <p className="text-gray-600">
             ISO 27001:2022 certified · GDPR compliant · EEA-hosted infrastructure
           </p>
         </div>

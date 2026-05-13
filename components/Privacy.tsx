@@ -65,7 +65,7 @@ export default function Privacy() {
               </p>
               <a
                 href="mailto:privacy@deltagreen.energy"
-                className="mt-3 inline-flex items-center gap-1.5 text-sm text-dg-green font-medium hover:underline"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm text-green-700 font-medium hover:underline"
               >
                 <MailIcon />
                 privacy@deltagreen.energy
@@ -124,7 +124,7 @@ function LinkCard({
         {download ? <DownloadIcon /> : <ExtLinkIcon />}
       </div>
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-dg-dark group-hover:text-dg-green transition-colors">
+        <p className="text-sm font-semibold text-dg-dark group-hover:text-green-700 transition-colors">
           {title}
         </p>
         <p className="text-xs text-gray-500 mt-0.5">{desc}</p>
@@ -145,7 +145,7 @@ function MailIcon() {
 
 function DownloadIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#16A34A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#3baa1a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <path d="M7 1v8M4 6l3 3 3-3M2 11h10" />
     </svg>
   );
@@ -153,7 +153,7 @@ function DownloadIcon() {
 
 function ExtLinkIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#16A34A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M6 2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V8" />
       <path d="M8 1h5v5M8 6l5-5" />
     </svg>
