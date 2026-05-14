@@ -113,7 +113,7 @@ export default function Certifications() {
             </div>
             <p className="mt-4 text-sm text-gray-600 leading-relaxed">
               Delta Green is classified as an SME under the Czech cybersecurity law administered by NÚKiB and is therefore outside the scope of NIS2 and its regulated-entity obligations. <br /><br />
-              Despite not being a regulated entity, our security programme is voluntarily aligned with NZKB/NIS2 requirements at approximately 80% coverage as part of our ISO 27001 implementation, and we monitor regulatory changes on an ongoing basis.
+              Despite not being a regulated entity, our security programme is voluntarily aligned with NZKB/NIS2 requirements as part of our ISO 27001 implementation, and we monitor regulatory changes on an ongoing basis.
             </p>
           </div>
         </div>
