@@ -16,17 +16,12 @@ export default function Disclosure() {
             integrity, or availability of your data, we are committed to
             transparent and timely communication.
           </p>
-          <div className="mt-8 grid sm:grid-cols-3 gap-5">
+          <div className="mt-8 grid sm:grid-cols-2 gap-5">
             {[
               {
                 icon: "⏱",
-                title: "72-hour notification",
-                desc: "For incidents likely to result in a risk to the rights and freedoms of natural persons, we notify affected customers within 72 hours of becoming aware of the incident — in line with GDPR Art. 33/34 obligations.",
-              },
-              {
-                icon: "📋",
-                title: "What we include",
-                desc: "Nature of the incident, categories and approximate number of records affected, likely consequences, measures taken or proposed, and a named point of contact.",
+                title: "Processor notification",
+                desc: "As a data processor, we notify affected customers (controllers) without undue delay upon becoming aware of a personal data breach — enabling them to meet their own obligations, including the 72-hour reporting window to supervisory authorities under GDPR Art. 33.",
               },
               {
                 icon: "🔄",
@@ -55,34 +50,12 @@ export default function Disclosure() {
               <p className="section-label">Security contact</p>
               <h2 className="section-heading">Responsible Disclosure</h2>
               <p className="section-body mt-3">
-                If you believe you have discovered a security vulnerability in
-                any Delta Green product or service, please report it
-                responsibly. We appreciate the work of security researchers
-                and commit to a transparent process.
+                We don’t operate a formal bug bounty programme or allow
+                unsolicited penetration testing at this time. However, if you
+                come across a potential security issue in any of our products
+                or services, we want to hear about it. Please reach out
+                privately so we can investigate and address it.
               </p>
-              <div className="mt-6 space-y-4">
-                {[
-                  {
-                    title: "Scope",
-                    text: "All domains, APIs, and mobile applications owned and operated by Delta Green. Out of scope: third-party services, social engineering, and physical security.",
-                  },
-                  {
-                    title: "Safe harbour",
-                    text: "We will not pursue legal action against researchers who act in good faith, avoid accessing or modifying data that is not their own, and report findings promptly without public disclosure until we confirm a fix.",
-                  },
-                  {
-                    title: "Response SLA",
-                    text: "We acknowledge receipt within 2 business days, triage within 5 business days, and communicate a remediation timeline within 10 business days.",
-                  },
-                ].map(({ title, text }) => (
-                  <div key={title} className="card">
-                    <p className="text-xs font-semibold text-green-700 uppercase tracking-wide mb-1">
-                      {title}
-                    </p>
-                    <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* CTA */}
@@ -365,10 +338,6 @@ function DisclosureModal({ open, onClose }: { open: boolean; onClose: () => void
             >
               {status === "submitting" ? "Sending…" : "Submit report"}
             </button>
-
-            <p className="text-xs text-gray-400 text-center">
-              We follow responsible disclosure principles and will not take legal action against good-faith researchers.
-            </p>
           </form>
         )}
       </div>
