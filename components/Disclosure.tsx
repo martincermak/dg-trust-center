@@ -5,7 +5,7 @@ export default function Disclosure() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section id="disclosure" className="bg-white">
+    <section id="disclosure" className="bg-dg-surface">
       {/* ── Incident Notification ── full width ── */}
       <div className="py-20 px-6 border-b border-dg-border">
         <div className="max-w-content mx-auto">
