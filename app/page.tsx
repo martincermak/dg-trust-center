@@ -21,9 +21,9 @@ export default function TrustPage() {
         <Hero />
         <Compliance />
         <SecurityPractices />
-        <Documents onRequestOpen={() => setFormOpen(true)} />
         <Privacy />
         <Disclosure />
+        <Documents onRequestOpen={() => setFormOpen(true)} />
       </main>
       <Footer />
       <RequestForm open={formOpen} onClose={() => setFormOpen(false)} />

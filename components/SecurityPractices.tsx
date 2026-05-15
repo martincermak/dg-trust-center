@@ -1,8 +1,8 @@
 import React from "react";
 
 const PRACTICES = [
-  { title: "Encryption", body: "All data in transit is protected by TLS 1.2 or higher. Data at rest is encrypted using AES-256. Encryption keys are managed through a dedicated key management service.", icon: "lock" },
-  { title: "Access Control & MFA", body: "Role-based access control (RBAC) limits data access to personnel with a documented business need. Our access management policy requires multi-factor authentication for internal systems and production environments where technically supported.", icon: "shield" },
+  { title: "Encryption", body: "All data in transit is protected by TLS 1.2 or higher. Data at rest is encrypted using AES-256. Encryption keys are managed through a dedicated key management service. Passwords are hashed using Argon2 and never stored in plain text.", icon: "lock" },
+  { title: "Access Control & MFA", body: "Role-based access control limits data access to personnel with a documented business need. Our access management policy requires multi-factor authentication for internal systems and production environments where technically supported.", icon: "shield" },
   { title: "Vulnerability Management", body: "We conduct annual penetration testing by an independent third party and perform continuous automated scanning. Findings are tracked against documented SLAs based on severity.", icon: "radar" },
   { title: "Incident Response", body: "A documented incident response plan is tested at least annually. Customers are notified of security incidents affecting their data within the timelines specified in our agreements and applicable law.", icon: "alert" },
   { title: "Business Continuity & DR", body: "Our services are designed for high availability with documented recovery time and recovery point objectives. Backup and restoration procedures are tested regularly.", icon: "refresh" },

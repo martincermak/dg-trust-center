@@ -1,12 +1,12 @@
 const DATA_TRANSFERS = [
-  { label: "Primary hosting", value: "EU/EEA (AWS Frankfurt & Ireland)", safe: true },
+  { label: "Primary hosting", value: "EU/EEA (Google Cloud Platform, Frankfurt)", safe: true },
   { label: "Sub-processors outside EEA", value: "Covered by Standard Contractual Clauses (SCCs) per Art. 46(2)(c) GDPR", safe: true },
   { label: "Adequacy decisions", value: "Applied where available (e.g. transfers to countries with EU adequacy decisions)", safe: true },
 ];
 
 export default function Privacy() {
   return (
-    <section id="privacy" className="py-20 px-6 bg-dg-surface">
+    <section id="privacy" className="py-20 px-6 bg-white">
       <div className="max-w-content mx-auto">
         <p className="section-label">Data Protection</p>
         <h2 className="section-heading">Privacy &amp; GDPR</h2>
@@ -14,7 +14,7 @@ export default function Privacy() {
         <div className="mt-10 grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-dg-dark">Key documents</h3>
-            {[{title:"Privacy Policy",desc:"How we collect, use, and protect personal data.",href:"https://deltagreen.energy/privacy",ext:true},{title:"Cookie Policy",desc:"Which cookies we set and how to manage them.",href:"https://deltagreen.energy/cookies",ext:true},{title:"DPA Template",desc:"Data Processing Agreement for customers. Download, review, sign and return.",href:"/documents/dpa-template.pdf",ext:false}].map(({title,desc,href,ext}) => (
+            {[{title:"Privacy Policy",desc:"How we collect, use, and protect personal data.",href:"https://deltagreen.energy/privacy",ext:true},{title:"Cookie Policy",desc:"Which cookies we set and how to manage them.",href:"https://deltagreen.energy/cookies",ext:true}].map(({title,desc,href,ext}) => (
               <a key={title} href={href} target={ext?"_blank":undefined} rel={ext?"noopener noreferrer":undefined} className="card flex items-center gap-4 hover:border-dg-border group">
                 <div className="w-9 h-9 bg-dg-muted rounded-lg flex items-center justify-center shrink-0">
                   <svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#3baa1a" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V8" /><path d="M8 1h5v5M8 6l5-5" /></svg>
@@ -26,10 +26,10 @@ export default function Privacy() {
               </a>
             ))}
             <div className="card mt-6">
-              <h3 className="text-sm font-semibold text-dg-dark mb-3">Data Protection Officer</h3>
+              <h3 className="text-sm font-semibold text-dg-dark mb-3">Data Protection Contact</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 For privacy-related requests, right-to-erasure or any GDPR
-                question, contact our DPO directly.
+                question, reach our data protection contact directly.
               </p>
               <a
                 href="mailto:security@deltagreen.energy"
